@@ -1,0 +1,13 @@
+{
+  "editor.codeActionsOnSave": {
+    "source.formatDocument": "explicit",
+    "source.fixAll.eslint": "explicit",
+    "source.fixAll.stylelint": "explicit"
+  },
+
+  // TODO: 若發現與 eslint, stylelint 衝突，則需要修正 (可於 .prettierrc 增加對應的衝突選項讓其一致)
+  "[javascript][css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.formatOnSave": true // editor.codeActionsOnSave 和 editor.formatOnSave 其中有一個啟用即可，二個同時啟用會衝突
+}
